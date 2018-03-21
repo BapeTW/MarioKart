@@ -27,7 +27,7 @@ function rollItemBox() {
 		} else if (randNum < 0.95) {
 			numStar++;
 			$("#numStars").html(numStar);
-		} else if (randNum < 0.9) {
+		} else if (randNum < 0.99) {
 			numGoldMush++;
 			$("#numGMushrooms").html(numGoldMush);
 		} else {
@@ -71,7 +71,7 @@ function rollHundred() {
 			} else if (randNum < 0.95) {
 				numStar++;
 				$("#numStars").html(numStar);
-			} else if (randNum < 0.9) {
+			} else if (randNum < 0.99) {
 				numGoldMush++;
 				$("#numGMushrooms").html(numGoldMush);
 			} else {
@@ -114,7 +114,7 @@ function rollBill() {
 			} else if (randNum < 0.95) {
 				numStar++;
 				$("#numStars").html(numStar);
-			} else if (randNum < 0.9) {
+			} else if (randNum < 0.99) {
 				numGoldMush++;
 				$("#numGMushrooms").html(numGoldMush);
 			} else {
