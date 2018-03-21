@@ -2,41 +2,30 @@
 <html>
 
 <head>
-  <title>The Perfect PB & J</title>
+  <title>Mario Kart Box</title>
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='https://cdn.rawgit.com/admsev/jquery-play-sound/master/jquery.playSound.js'></script>
 </head>
 
 <body>
-
   <div>
-    <h1>The Perfect PB & J</h1>
-    <hr>
-    <img src="images/PBJ.jpg" alt="PBG Image">
-    <hr>
-    <h2>Description</h2>
-    <p id="spacing">This peanut butter and jelly sandwich is my favorite sandwich. It has the perfect balance of ingredients and looks great when made right.</p>
-    <p></p>  
-    <p id="paddedp">Any peanut butter and jam will work but my recommendation is to use grape jelly and all natural peanut butter.</p>
-    <hr>
-    <h2>Ingredients</h2>
+    <h1>Mario Kart Item Box Simulation</h1>
+    <p id="intro">Welcome to my Mario Kart item box simulator! To begin, either click on the gif or one of the two buttons above the gif to start simulating your item drops! Also, be sure to add your position to better simulate your chances of getting certain items!</p>
     <ul>
-      <li>2 slices of white bread</li>
-      <li>1 jar of grape jelly</li>
-      <li>1 jar of <a href="https://www.walmart.ca/en/ip/kraft-all-natural-peanut-butter/6000145830562" target="_blank">all natural peanut butter</a></li>
+      <li><img src="images/MarioKartbanana.png" class="itemPictures">Banana's: <span id="numBananas">0</span></li>
+      <li><img src="images/MarioKartGreenshell.png" class="itemPictures">Green Shell's: <span id="numGreenShells">0</span></li>
+      <li><img src="images/MarioKartStar.png" class="itemPictures">Star's: <span id="numStars">0</span></li>
+      <li><img src="images/MarioKartGoldMush.png" class="itemPictures">Golden Mushroom's: <span id="numGMushrooms">0</span></li>
+      <li><img src="images/MarioKartBulletBill.png" class="itemPictures">Bullet Bill's: <span id="numBulletBills">0</span></li>
     </ul>
-    <hr>
-    <h2 id="Directions">Directions</h2>
-    <ol>
-      <li>Lay both slices of bread next to each other on a cutting board.</li>
-      <li>With the butter knife, spread a 1/8 inch layer of peanut butter on the left side.</li>
-      <li>On the right side, spread a 1/8 inch layer of jelly.</li>
-      <li>Carefully place the two halves together so that the jelly is on top.</li>
-    </ol>
-    <hr>
-    <p id="footer"><em>Thanks to <a href="https://googlecreativelab.github.io/coder-projects/" target="_blank">Google Creative Lab - Coder Projects</a> for content & inspiration.</em></p>
+    <p><button id="hundredTimes">Spin 100x</button> <button id="fiveBulletBill">5 Bullet Bills</button></p>
+    <p>Position: <input id="position" type="number"></p>
+    <img onclick='$.playSound("sounds/ItemBoxSound.mp3");' id="itemBoxGif" src="images/MarioKartItemRoll.gif">
   </div>
 
+  <!-- LOAD SCRIPT -->
+  <script src="script.js"></script>
 </body>
 
 </html>
