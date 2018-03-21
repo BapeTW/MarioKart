@@ -1,0 +1,78 @@
+body {
+  background-color: #680A0A;
+}
+
+div {
+  background-color: white;
+  top: 0px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+img {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+p, ul, ol {
+  font-size: 14.4px;
+}
+
+hr {
+  width: 500px;
+}
+
+#paddedp {
+  padding-bottom: 3px;
+}
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  width: 500px;
+  margin: auto;
+  font-size: 45px;
+  letter-spacing: 1px;
+  padding: 20px;
+}
+
+h2 {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  font-size: 22px;
+}
+
+a {
+  text-decoration: none;
+  color: #680A0A;
+}
+
+p, h2, ul, li {
+  margin: auto;
+  width: 500px;
+  font-family: "Open-Sans", sans-serif;
+}
+
+#footer {
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+
+#spacing {
+  padding-bottom: 10px;
+}
+
+ol, ul {
+  padding-left: 80px;
+  padding-top: 0px;
+  top: 0px;
+}
+
+#Directions {
+  padding-bottom: 0px;
+}
+
+a:hover {
+  color: burlywood;
+}
